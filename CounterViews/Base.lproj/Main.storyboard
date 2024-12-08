@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--View 2-->
         <scene sceneID="Z8b-Q8-kXH">
             <objects>
                 <viewController id="QGr-zQ-ru2" customClass="View2Controller" customModule="CounterViews" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,13 +36,13 @@
                         <viewLayoutGuide key="safeArea" id="Xo4-96-SIH"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="EEJ-gb-KAJ"/>
+                    <tabBarItem key="tabBarItem" title="View 2" id="EEJ-gb-KAJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dD-HA-X2F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="853" y="179"/>
         </scene>
-        <!--Item 1-->
+        <!--View1-->
         <scene sceneID="Qtp-QK-6P9">
             <objects>
                 <viewController id="zxG-Ch-ZhU" customClass="View1Controller" customModule="CounterViews" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,7 +70,7 @@
                         <viewLayoutGuide key="safeArea" id="qG8-cv-Vgv"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Ljg-D3-1QV"/>
+                    <tabBarItem key="tabBarItem" title="View1" id="Ljg-D3-1QV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbk-rS-JlU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,7 +189,7 @@
                         <viewLayoutGuide key="safeArea" id="bxh-CM-sZj"/>
                         <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="QJZ-ez-953"/>
+                    <tabBarItem key="tabBarItem" title="View 3" id="QJZ-ez-953"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uX6-fB-nyq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
