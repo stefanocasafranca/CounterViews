@@ -12,7 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, didFinishLaunchingWithOptions options: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         if let tabBarController = window?.rootViewController as? UITabBarController {
-            let counterModel = CounterModel() // Create a shared CounterModel
+            let counterModel = CounterModel(count: 1) // Create a shared CounterModel
 
             // Loop through each view controller in the tab bar
             if let viewControllers = tabBarController.viewControllers {

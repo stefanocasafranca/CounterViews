@@ -29,7 +29,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="button2ndPressed:" destination="QGr-zQ-ru2" eventType="touchUpInside" id="B5g-hN-TTB"/>
+                                    <action selector="incrementCounter:" destination="QGr-zQ-ru2" eventType="touchUpInside" id="yF6-bn-18k"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dD-HA-X2F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853" y="152"/>
+            <point key="canvasLocation" x="853" y="179"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="Qtp-QK-6P9">
@@ -58,12 +58,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sc9-RF-No1">
-                                <rect key="frame" x="172" y="591" width="75" height="35"/>
+                                <rect key="frame" x="159" y="580" width="75" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="button1Pressed:" destination="zxG-Ch-ZhU" eventType="touchUpInside" id="rkA-VD-jFY"/>
+                                    <action selector="incrementCounter:" destination="zxG-Ch-ZhU" eventType="touchUpInside" id="o5I-sU-DSO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -79,7 +79,6 @@
         <!--View Controller-->
         <scene sceneID="Osl-iV-pAR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QKp-3j-Swu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="XvD-sM-0Fu" customClass="ViewController" customModule="CounterViews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CFH-Nz-PgH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -138,13 +137,14 @@
                         <outlet property="category3Label" destination="37v-Sg-ocI" id="EzR-E3-hp8"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QKp-3j-Swu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-877" y="-152"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Pek-im-nng">
             <objects>
-                <tabBarController id="vxH-Cg-L7o" sceneMemberID="viewController">
+                <tabBarController id="vxH-Cg-L7o" customClass="TabBarController" customModule="CounterViews" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="crT-py-xvr"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I8S-aO-Q0k">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -182,7 +182,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="button3Pressed:" destination="pCZ-eT-nt0" eventType="touchUpInside" id="cP7-uh-BV8"/>
+                                    <action selector="incrementCounter:" destination="pCZ-eT-nt0" eventType="touchUpInside" id="q5h-X5-NhB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -201,10 +201,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

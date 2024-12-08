@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var counterModel: CounterModel! // Shared CounterModel instance
+    var counterModel: CounterModel!
     
     @IBOutlet weak var category1Label: UILabel!
     @IBOutlet weak var category2Label: UILabel!
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
     func updateLabels() {
         guard let counterModel = counterModel else {
-            print("Error: counterModel is nil!")
+            print("Error: CounterModel is nil!")
             return
         }
 
@@ -30,6 +30,12 @@ class ViewController: UIViewController {
         category3Label.text = "Category 3: \(counterModel.counters[2])"
     }
 }
+
+
+
+
+
+    
 
   
    

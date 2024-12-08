@@ -8,5 +8,14 @@
 import Foundation
 
 class CounterModel {
-    var counters = [0, 0, 0] // One counter for each tab
+    var counters: [Int]
+
+    init(count: Int) {
+        self.counters = Array(repeating: 0, count: count)
+    }
+
+    func incrementCounter(at index: Int) {
+        guard index >= 0 && index < counters.count else { return }
+        counters[index] += 1
+    }
 }
