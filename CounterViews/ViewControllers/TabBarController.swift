@@ -5,16 +5,15 @@
 //  Created by Stefano Casafranca on 12/8/24.
 //
 
-import Foundation
 import UIKit
 
 class TabBarController: UITabBarController {
-    let counterModel = CounterModel(count: 3) // 3 categories for counters
+    let counterModel = CounterModel(count: 3) // Create shared CounterModel
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Assign CounterModel to all child controllers
+        // Pass CounterModel to all child view controllers
         if let viewControllers = self.viewControllers {
             for (index, vc) in viewControllers.enumerated() {
                 if let counterVC = vc as? BaseCounterViewController {
@@ -27,4 +26,5 @@ class TabBarController: UITabBarController {
         }
     }
 }
+
 
