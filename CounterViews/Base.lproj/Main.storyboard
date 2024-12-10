@@ -189,7 +189,9 @@
                         <viewLayoutGuide key="safeArea" id="bxh-CM-sZj"/>
                         <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="View 3" id="QJZ-ez-953"/>
+                    <tabBarItem key="tabBarItem" title="View 3" id="QJZ-ez-953">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uX6-fB-nyq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

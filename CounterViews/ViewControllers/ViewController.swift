@@ -19,16 +19,21 @@ class ViewController: UIViewController {
         updateLabels()
     }
 
+    
+
+
     func updateLabels() {
         guard let counterModel = counterModel else {
             print("Error: CounterModel is nil!")
             return
         }
 
+        // Access specific counter values by index
         category1Label.text = "Category 1: \(counterModel.counters[0])"
         category2Label.text = "Category 2: \(counterModel.counters[1])"
         category3Label.text = "Category 3: \(counterModel.counters[2])"
     }
+
 }
 
 
