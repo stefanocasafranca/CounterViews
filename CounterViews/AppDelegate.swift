@@ -9,13 +9,21 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
+    // Shared CounterModel instance
+    var counterModel = CounterModel(count: 3)
 
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
+        // Pass the CounterModel instance to the root ViewController
+        if let rootViewController = window?.rootViewController as? ViewController {
+            rootViewController.counterModel = counterModel
+        }
         return true
     }
+}
 
     // MARK: UISceneSession Lifecycle
 
@@ -32,5 +40,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-}
+
 

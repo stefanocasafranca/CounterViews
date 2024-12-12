@@ -14,11 +14,11 @@ class BaseCounterViewController: UIViewController {
 
     @IBAction func incrementCounter(_ sender: UIButton) {
         guard let counterModel = counterModel, let categoryIndex = categoryIndex else {
-            print("Error: CounterModel or CategoryIndex is nil!")
-            return
-        }
+                    print("Error: CounterModel or CategoryIndex is nil!")
+                    return
+                }
 
-        counterModel.incrementCounter(at: categoryIndex)
-        print("Counter updated: \(counterModel.counters)")
-    }
-}
+                counterModel.incrementCounter(at: categoryIndex)
+                print("Counter updated: \(counterModel.counters)")
+            }
+        }
